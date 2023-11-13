@@ -4,6 +4,7 @@ import Header from "./components/header/Header"
 import Home from "./components/home/Home"
 import Catalogue from './components/catalogue/Catalogue'
 import CreateGame from './components/create-game/CreateGame'
+import Login from './components/login/Login'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
                 <Route path='/' element={ <Home /> } />
                 <Route path='/catalogue' element={ <Catalogue /> } />
                 <Route path='/games/create' element={ <CreateGame /> } />
+                <Route path='/login' element={ <Login /> } />
             </Routes>
 
            
