@@ -1,5 +1,8 @@
+import { Routes, Route } from 'react-router-dom'
+
 import Header from "./components/header/Header"
 import Home from "./components/home/Home"
+import Catalogue from './components/catalogue/Catalogue'
 
 function App() {
 
@@ -7,7 +10,12 @@ function App() {
         <div id="box">
             <Header />
 
-            <Home />
+            <Routes>
+                <Route path='/' element={ <Home /> } />
+                <Route path='/catalogue' element={ <Catalogue /> } />
+            </Routes>
+
+           
         </div>
     )
 }
