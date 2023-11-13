@@ -12,5 +12,5 @@ export const create = async (gameData) => {
 
     const result = await response.json();
 
-    return result;
+    return result; 
 }
