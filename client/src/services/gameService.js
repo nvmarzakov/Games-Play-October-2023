@@ -8,6 +8,12 @@ export const getAll = async () => {
     return Object.values(result);
 }
 
+export const getOne = async(gameId) => {
+    const result = await request.get(`${baseUrl}/${gameId}`);
+
+    return result;
+}
+
 export const create = async (gameData) => {
     const result = await request.post(baseUrl, gameData);
 
@@ -25,8 +31,3 @@ export const create = async (gameData) => {
     return result; 
 }
 
-export const get = request.bind(null, 'GET'); 
-export const post = request.bind(null, 'POST'); 
-export const put = request.bind(null, 'PUT'); 
-export const remove = request.bind(null, 'DELETE'); 
-export const patch = request.bind(null, 'PATCH'); 
